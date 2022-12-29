@@ -1,0 +1,240 @@
+body {
+  font-size: 12px;
+  line-height: 16px;
+  color: #202020;
+  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* skip-nav */
+#skip-nav {
+  position: relative;
+  z-index: 100;
+}
+
+#skip-nav a {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 300px;
+  background: #333;
+  text-align: center;
+  padding: 2px 6px 0 0;
+  font-size: 13px;
+  line-height: 26px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+#skip-nav a:focus {
+  top: 0;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.inner {
+  position: relative;
+  width: 1130px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+#main {
+  position: relative;
+  width: 1130px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  letter-spacing: -.2px;
+}
+
+/* thumb-bd */
+.thumb-bd {
+  position: relative;
+  display: block;
+}
+
+.thumb-bd::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .08;
+  filter: alpha(opacity=8);
+  border: 1px solid #000;
+}
+
+/* thumb-dim */
+.thumb-dim {
+  position: relative;
+  display: block;
+}
+
+.thumb-dim::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .1;
+  filter: alpha(opacity=10);
+  background-color: #000;
+}
+
+/* badge-inner */
+.badge-inner {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* icon */
+i[class^="ico-"],
+i[class*="ico-"] {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* .ico-play {
+  width: 24px;
+  height: 28px;
+  background-position: 0 -389px;
+} */
+
+.btn-prev .ico-btn,
+.btn-next .ico-btn {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-prev .ico-btn {
+  background-position: -44px -345px;
+}
+
+.btn-next .ico-btn {
+  background-position: -86px -345px;
+}
+
+.btn-prev-l .ico-btn,
+.btn-next-l .ico-btn {
+  width: 44px;
+  height: 44px;
+}
+
+.btn-prev-l .ico-btn {
+  background-position: 0 -299px;
+}
+
+.btn-next-l .ico-btn {
+  background-position: -224px -158px;
+}
+
+.btn-prev .ico-btn2,
+.btn-next .ico-btn2 {
+  width: 6px;
+  height: 9px;
+}
+
+.btn-prev .ico-btn2 {
+  background-position: -408px -74px;
+}
+
+.btn-next .ico-btn2 {
+  background-position: -451px -392px;
+}
+
+.btn-prev .ico-btn3,
+.btn-next .ico-btn3 {
+  width: 5px;
+  height: 9px;
+}
+
+.btn-prev .ico-btn3 {
+  background-position: -93px -77px;
+}
+
+.btn-next .ico-btn3 {
+  background-position: -79px -77px;
+}
+
+.side-bar {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #e4e8eb;
+}
+
+/* storage */
+.ico-keyboard,
+.ico-arrow,
+.ico-search,
+.ico-junior,
+.ico-happybin,
+.ico-mail,
+.ico-tv,
+.ico-list,
+.ico-tile,
+.ico-set,
+.ico-btn,
+.ico-btn2,
+.ico-play,
+.ico-more,
+.ico-naver,
+#header .logo a::before,
+#header .gnb-list .shop::before,
+#header .gnb-list .shoplive::before,
+#header .service-area .link-home::after,
+#header .btn-more::after,
+#header .degree-box .max::before,
+.sc-newsstand .group-issue .link-media::after,
+.sc-newsstand .group-title .link-newsstand::before,
+.sc-newsstand .group-title .link-newsstand::after,
+.sc-themecast .group-title .btn-set::before,
+.sc-themecast .theme-title .title::after,
+.sc-login .look-area .link-look.id::before,
+.sc-login .look-area .link-join::before,
+#footer .group-notice .link-all::after {
+  background-image: url("../img/sp-bg.png");
+  background-size: 457px 434px;
+  background-repeat: no-repeat;
+}
+
+.ico-btn3,
+.ico-onealpha,
+.sc-shopcast .group-title .link-shop::before,
+.sc-shopcast .group-title .link-shop::after,
+.sc-shopcast .group-plusdeal .link-logo::before,
+.sc-shopcast .group-plusdeal .thumb-box+.thumb-box::before {
+  background-image: url("../img/sp-bg2.png");
+  background-size: 107px 101px;
+  background-repeat: no-repeat;
+}
+
+.ico-weather {
+  background-image: url("../img/sp-weather.png");
+  background-size: 215px 185px;
+  background-repeat: no-repeat;
+}
